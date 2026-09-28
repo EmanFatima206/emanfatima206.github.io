@@ -9,7 +9,16 @@
     <meta name="description"
           content="Academic portfolio of Eman Fatima, a Computer Science graduate interested in Artificial Intelligence, Machine Learning, NLP, and Trustworthy AI.">
 
+    <!-- Modern academic-style font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
     <style>
+
+        /* ================= GENERAL ================= */
+
         * {
             box-sizing: border-box;
         }
@@ -20,108 +29,150 @@
 
         body {
             margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.7;
-            color: #222;
-            background: #ffffff;
+            font-family: "Inter", Arial, Helvetica, sans-serif;
+            line-height: 1.75;
+            color: #27313d;
+            background: #f8fafc;
         }
 
         a {
-            color: #1f5f8b;
+            color: #245b7a;
             text-decoration: none;
         }
 
         a:hover {
-            text-decoration: underline;
+            color: #173f56;
         }
 
-        /* ---------- HEADER ---------- */
+
+        /* ================= HEADER ================= */
 
         header {
-            background: #f5f7f9;
-            border-bottom: 1px solid #d9dfe4;
-            padding: 55px 20px 45px;
+            background: #eef3f7;
+            border-bottom: 1px solid #d8e0e7;
+            padding: 62px 20px 52px;
         }
 
         .header-container {
-            max-width: 900px;
+            max-width: 920px;
             margin: auto;
         }
 
         h1 {
             margin: 0 0 8px;
-            font-size: 38px;
-            font-weight: 600;
-            color: #1f2933;
+            font-size: 40px;
+            line-height: 1.25;
+            font-weight: 700;
+            letter-spacing: -0.6px;
+            color: #182735;
         }
 
         .subtitle {
-            margin: 0 0 20px;
-            font-size: 18px;
-            color: #52606d;
+            margin: 0 0 24px;
+            font-size: 17px;
+            font-weight: 400;
+            color: #526575;
         }
 
         .contact {
-            font-size: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
         }
 
         .contact a {
-            margin-right: 18px;
+            display: inline-block;
+            padding: 7px 14px;
+            border: 1px solid #c8d4dd;
+            border-radius: 5px;
+            background: #ffffff;
+            color: #294b60;
+            font-size: 14px;
+            font-weight: 500;
+            transition: 0.2s ease;
         }
 
-        /* ---------- NAVIGATION ---------- */
+        .contact a:hover {
+            background: #f3f7fa;
+            border-color: #9fb3c1;
+            text-decoration: none;
+        }
+
+
+        /* ================= NAVIGATION ================= */
 
         nav {
-            border-bottom: 1px solid #e1e5e8;
-            background: #ffffff;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #dfe5ea;
+            background: rgba(255, 255, 255, 0.96);
         }
 
         .nav-container {
-            max-width: 900px;
+            max-width: 920px;
             margin: auto;
-            padding: 13px 20px;
+            padding: 12px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
         }
 
         nav a {
-            margin-right: 22px;
-            font-size: 14px;
-            color: #364152;
+            font-size: 13px;
+            font-weight: 500;
+            color: #4b5d6b;
+            transition: color 0.2s ease;
         }
 
-        /* ---------- MAIN ---------- */
+        nav a:hover {
+            color: #1d536f;
+            text-decoration: none;
+        }
+
+
+        /* ================= MAIN ================= */
 
         main {
-            max-width: 900px;
+            max-width: 920px;
             margin: auto;
-            padding: 20px;
+            padding: 18px 20px 45px;
         }
 
         section {
-            padding: 35px 0;
-            border-bottom: 1px solid #e5e7eb;
+            padding: 42px 0;
+            border-bottom: 1px solid #e0e6eb;
         }
 
         section:last-child {
             border-bottom: none;
         }
 
+
+        /* ================= HEADINGS ================= */
+
         h2 {
-            margin-top: 0;
-            margin-bottom: 18px;
+            position: relative;
+            margin: 0 0 22px;
+            padding-left: 14px;
             font-size: 24px;
+            line-height: 1.4;
             font-weight: 600;
-            color: #1f2933;
+            color: #1d2d3a;
+            border-left: 4px solid #477b96;
         }
 
         h3 {
-            margin-bottom: 4px;
+            margin: 0 0 5px;
             font-size: 18px;
-            color: #263238;
+            line-height: 1.5;
+            font-weight: 600;
+            color: #263b49;
         }
 
         p {
             margin-top: 8px;
-            margin-bottom: 14px;
+            margin-bottom: 15px;
         }
 
         ul {
@@ -132,92 +183,172 @@
             margin-bottom: 7px;
         }
 
+
+        /* ================= ITEMS ================= */
+
         .item {
-            margin-bottom: 25px;
+            margin-bottom: 30px;
+        }
+
+        .item:last-child {
+            margin-bottom: 0;
         }
 
         .date {
-            color: #66788a;
-            font-size: 14px;
+            margin-top: 2px;
+            color: #718291;
+            font-size: 13px;
+            font-weight: 500;
         }
 
         .institution {
-            color: #52606d;
+            margin: 2px 0;
+            color: #526575;
+            font-size: 15px;
         }
 
-        /* ---------- RESEARCH INTERESTS ---------- */
+
+        /* ================= RESEARCH INTERESTS ================= */
 
         .research-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 9px;
             padding: 0;
             list-style: none;
         }
 
         .research-list li {
-            border: 1px solid #cfd8df;
-            padding: 6px 13px;
             margin: 0;
-            font-size: 14px;
-            color: #364152;
-            background: #fafbfc;
+            padding: 7px 13px;
+            border: 1px solid #cbd8e1;
+            border-radius: 4px;
+            background: #ffffff;
+            color: #38566a;
+            font-size: 13px;
+            font-weight: 500;
         }
 
-        /* ---------- PROJECTS ---------- */
+
+        /* ================= PROJECT LINKS ================= */
 
         .project-link {
+            margin-top: 15px;
             font-size: 14px;
+            font-weight: 500;
         }
 
-        /* ---------- FOOTER ---------- */
+        .project-link a {
+            display: inline-block;
+            padding-bottom: 2px;
+            border-bottom: 1px solid #a9bfcc;
+        }
+
+        .project-link a:hover {
+            border-bottom-color: #245b7a;
+            text-decoration: none;
+        }
+
+
+        /* ================= SKILLS ================= */
+
+        #skills h3 {
+            margin-top: 21px;
+            margin-bottom: 4px;
+            font-size: 16px;
+            color: #315268;
+        }
+
+        #skills h3:first-of-type {
+            margin-top: 0;
+        }
+
+
+        /* ================= FOOTER ================= */
 
         footer {
-            border-top: 1px solid #e1e5e8;
-            padding: 25px 20px;
+            border-top: 1px solid #dfe5ea;
+            padding: 26px 20px;
             text-align: center;
-            font-size: 13px;
-            color: #66788a;
+            font-size: 12px;
+            color: #718291;
+            background: #f3f6f8;
         }
 
-        /* ---------- MOBILE ---------- */
+
+        /* ================= MOBILE ================= */
 
         @media (max-width: 600px) {
 
             header {
-                padding: 40px 20px 35px;
+                padding: 45px 20px 40px;
             }
 
             h1 {
-                font-size: 30px;
+                font-size: 31px;
+                letter-spacing: -0.3px;
             }
 
             .subtitle {
-                font-size: 16px;
+                font-size: 15px;
+                line-height: 1.6;
+            }
+
+            .contact {
+                gap: 8px;
+            }
+
+            .contact a {
+                padding: 6px 11px;
+                font-size: 13px;
+            }
+
+            .nav-container {
+                gap: 10px 15px;
+                padding: 11px 20px;
             }
 
             nav a {
-                display: inline-block;
-                margin-bottom: 7px;
-                margin-right: 15px;
+                font-size: 12px;
+            }
+
+            main {
+                padding: 10px 20px 35px;
             }
 
             section {
-                padding: 28px 0;
+                padding: 32px 0;
             }
 
             h2 {
-                font-size: 22px;
+                font-size: 21px;
+            }
+
+            h3 {
+                font-size: 17px;
+            }
+
+            .research-list {
+                gap: 7px;
+            }
+
+            .research-list li {
+                font-size: 12px;
+                padding: 6px 10px;
             }
         }
+
     </style>
 </head>
 
+
 <body>
+
 
     <!-- ================= HEADER ================= -->
 
     <header>
+
         <div class="header-container">
 
             <h1>Eman Fatima</h1>
@@ -227,19 +358,38 @@
             </p>
 
             <div class="contact">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=emaaanfma11@gmail.com" target="_blank">Email</a>
-                <a href="https://github.com/EmanFatima206" target="_blank">GitHub</a>
-                <a href = "http://www.linkedin.com/in/eman-fatima-a9b3412a3 target="_blank">LinkedIn</a>
-                <a href="Eman Fatima_CV.pdf" target="_blank">CV</a>
+
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=emaaanfma11@gmail.com"
+                   target="_blank">
+                    Email
+                </a>
+
+                <a href="https://github.com/EmanFatima206"
+                   target="_blank">
+                    GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/in/eman-fatima-a9b3412a3"
+                   target="_blank">
+                    LinkedIn
+                </a>
+
+                <a href="Eman Fatima_CV.pdf"
+                   target="_blank">
+                    CV
+                </a>
+
             </div>
 
         </div>
+
     </header>
 
 
     <!-- ================= NAVIGATION ================= -->
 
     <nav>
+
         <div class="nav-container">
 
             <a href="#about">About</a>
@@ -252,6 +402,7 @@
             <a href="#contact">Contact</a>
 
         </div>
+
     </nav>
 
 
@@ -296,12 +447,14 @@
             <h2>Research Interests</h2>
 
             <ul class="research-list">
+
                 <li>Artificial Intelligence</li>
                 <li>Machine Learning</li>
                 <li>Natural Language Processing</li>
                 <li>Large Language Models</li>
                 <li>Trustworthy AI</li>
                 <li>Intelligent Systems</li>
+
             </ul>
 
         </section>
@@ -371,10 +524,12 @@
                 </p>
 
                 <p class="project-link">
+
                     <a href="https://github.com/EmanFatima206/student-performance-prediction"
                        target="_blank">
                         View Project on GitHub →
                     </a>
+
                 </p>
 
             </div>
@@ -543,17 +698,22 @@
 
             <p>
                 <strong>Email:</strong>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=emaaanfma11@gmail.com" target="_blank">Email</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=emaaanfma11@gmail.com"
+                   target="_blank">
+                    emaaanfma11@gmail.com
+                </a>
             </p>
 
             <p>
                 <strong>GitHub:</strong>
-                <a href="https://github.com/EmanFatima206" target="_blank">
+                <a href="https://github.com/EmanFatima206"
+                   target="_blank">
                     github.com/EmanFatima206
                 </a>
             </p>
 
         </section>
+
 
     </main>
 
@@ -565,6 +725,7 @@
         © 2026 Eman Fatima · Academic Portfolio
 
     </footer>
+
 
 </body>
 </html>
